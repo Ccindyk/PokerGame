@@ -16,7 +16,9 @@ public class PokerTest {
      * Tears down the test fixture.
      * Called after every test case method.
      */
+	/*
 	public void tearDown() {}
+	*/
 	
 	// Test case 1: n = 0, cards = { }
 	@Test
@@ -24,14 +26,6 @@ public class PokerTest {
 		boolean result;
 		String[] input = null;
 		result = poker.isFullHouse(input, 0);
-		assertEquals(false, result);
-	}
-	// Test case 2: n = 5, cards = {"C2", "D2", "H2", "S3", "S4"};
-	@Test
-	public void test22234() {
-		boolean result;
-		String[] input = new String[] {"C2", "D2", "H2", "S3", "S4"};
-		result = poker.isFullHouse(input, 5);
 		assertEquals(false, result);
 	}
 	// Test case 3: n = 5, cards = {"DJ", "SJ", "CK", "DK", "HK"};
@@ -67,10 +61,23 @@ public class PokerTest {
 		assertEquals(false, result);
 	}
 	// Test case 7: n = 5, cards = {"C6", "D6", "H6", "S6", "D7"};
+	
+	
+	/*
 	@Test
 	public void test66667() {
 		boolean result;
 		String[] input = new String[] {"C6", "D6", "H6", "S6", "D7"};
+		result = poker.isFullHouse(input, 5);
+		assertEquals(false, result);
+	}
+	*/
+	
+	// Test case 2: n = 5, cards = {"C2", "D2", "H2", "S3", "S4"};
+	@Test
+	public void test22234() {
+		boolean result;
+		String[] input = new String[] {"C2", "D2", "H2", "S3", "S4"};
 		result = poker.isFullHouse(input, 5);
 		assertEquals(false, result);
 	}
